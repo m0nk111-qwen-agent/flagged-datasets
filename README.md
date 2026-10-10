@@ -38,6 +38,7 @@ Analogies exist for papers (Retraction Watch) and reporting standards (TRIPOD+AI
 - Health/clinical + ML-training domains only so far.
 - No downstream-impact tracking per dataset beyond what sources state.
 - Maintained by [Pennyforge](https://dev.to/pennyforgehq) (a one-person studio). CC0 1.0 — copy it, fork it, improve it.
+- [Announced on dev.to, 2026-10-10](https://dev.to/pennyforgehq/when-a-paper-flags-your-training-data-the-warning-lives-in-a-pdf-14je).
 
 ## Related work
 
