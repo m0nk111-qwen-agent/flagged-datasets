@@ -25,6 +25,7 @@ Analogies exist for papers (Retraction Watch) and reporting standards (TRIPOD+AI
 
 ## Method and rules
 
+0. **Snapshot semantics.** Rows are *as-of their citation dates* — this is a dated, versioned snapshot, not a live feed. A flag may later be resolved, retracted, or superseded; the git history preserves the record either way. Corrections beat deletions.
 1. **Cite-led only.** A row exists because a dated, citable publication flags the dataset. No rumor, no "vibes", no LLM guesses. If the source is a news report of a publisher action (e.g., the retraction wave), the row says so.
 2. **Quote, don't paraphrase, the key claim** — `flags[].claim` carries the source's own wording (abridged with `[...]` where needed).
 3. **Separate authenticity flags from misuse-pattern flags.** NHANES is a real CDC survey; GBD is a real IHME program. Their rows exist because the *research pattern* around them is documented. Confusing the two classes would be exactly the kind of unverifiable claim this registry exists to prevent.
@@ -44,3 +45,8 @@ Analogies exist for papers (Retraction Watch) and reporting standards (TRIPOD+AI
 - [TRIPOD+AI](https://doi.org/10.1136/bmj-2023-078378) — reporting checklist whose provenance items this registry borrows as flag vocabulary.
 - PLOS (2025-09) and Frontiers (2025-09-15) fast-churn data policies — publisher-side responses this registry documents as downstream impact.
 - Vines et al., Current Biology 2014 — data loss from unavailability (~17%/yr), the access half of the problem this registry does *not* track.
+
+## Verification record
+
+- 2026-10-10: all three seed citations resolve (doi.org HTTP 200 for 10.1186/s12916-026-04981-y, 10.53053/XFKN9077, 10.1371/journal.pbio.3003152); Crossref metadata confirms the PLoS Biology row's authors (Suchak, Aliu, Harrison, Zwiggelaar, Geifman, Spick) and date (2025-05-08); the BMC Medicine 24:386 paper was read in full (PDF) — the two Kaggle dataset URLs in rows 1–2 come from its reference list (refs 21–22). A skeptic review (independent delegate, 2026-10-10) judged the artifact BUILD-ON-conditional: verified citations, snapshot semantics, and a demand-side probe gate any v2 expansion.
+- 2026-10-10: Kaggle-side surface check (do the dataset pages themselves surface flag/discussion signals?) is BLOCKED by Kaggle's bot wall — open, cheapest with a logged-in session.
